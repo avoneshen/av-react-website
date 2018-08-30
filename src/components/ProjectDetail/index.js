@@ -15,7 +15,7 @@ const ProjectDetail = ({project}) => {
         { /* Image */ }
         <div className="col-md-4">
           <SlideSection>
-              <img src={'images/tower-bridge.jpg'} alt={'Tower Bridge'} />
+              <img src={'images/tower-bridge.JPG'} alt={'Tower Bridge'} />
           </SlideSection>
         </div>
         { /* Details */ }
