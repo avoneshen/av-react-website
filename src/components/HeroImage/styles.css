@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero .ctaButton {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  margin-left: -85px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 0;
+  width: 172px;
+}
+
+.hero .ctaButton:hover {
+  background: #fff;
+  color: #48cfad;
+  cursor: pointer;
+}

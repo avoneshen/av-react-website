@@ -1,0 +1,53 @@
+.slideSection {
+  position: relative;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-height: 300px;
+  width: 100%;
+}
+.slideSection img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #034694;
+  border-radius: 50%;
+  position: relative;
+}
+
+.projHeader {
+  margin-top: 10px;
+  text-align: center;
+  color: #034694;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.projBody {
+  font-size: 17px;
+  color: #034694;
+}
+
+.projButton {
+  margin: auto;
+  border: 2px solid #034694;
+  color: #034694;
+  font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  width: 172px;
+}
+.projButton > a {
+  color: #034694;
+}
+.projButton:hover {
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  .slideSection img {
+    width: 200px;
+    height: 200px;
+  }
+}

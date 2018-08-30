@@ -1,0 +1,24 @@
+{
+  "cards": [{
+      "id":"1",
+      "src":"images/tall-placeholder.png",
+      "alt":"About Me Image",
+      "ctaPath":"./about-me",
+      "ctaText":"My Story"
+    },
+    {
+      "id":"2",
+      "src":"images/tall-placeholder.png",
+      "alt":"Projects",
+      "ctaPath":"./projects",
+      "ctaText":"My Projects"
+    },
+    {
+      "id":"2",
+      "src":"images/tall-placeholder.png",
+      "alt":"Contact Me",
+      "ctaPath":"./contact-me",
+      "ctaText":"On The Web"
+    }
+  ]
+}
