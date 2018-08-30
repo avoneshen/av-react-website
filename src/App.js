@@ -17,6 +17,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 // import FA Brand icons
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
+// AWS settings
+import Amplify from 'aws-amplify';
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile)
+
 library.add(fab);
 
 class App extends Component {

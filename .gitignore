@@ -9,6 +9,11 @@ node_modules/
 # production
 /build
 
+# aws
+src/aws-exports.js
+amplify/
+.amplifyrc
+
 # misc
 .DS_Store
 .env.local
