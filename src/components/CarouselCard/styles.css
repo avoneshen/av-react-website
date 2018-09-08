@@ -1,19 +1,19 @@
-.card {
+.carouselCard {
   position: relative;
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 
-.card img {
+.carouselCard img {
   width: 100%;
   background-color: #034694;
 }
 
-.card .ctaButton {
+.carouselCard .ctaButton {
   position: absolute;
-  bottom: 25%;
+  bottom: 50%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -85px;
+  margin-bottom: 20px;
   border: 2px solid #fff;
   color: #fff;
   font-size: 19px;
@@ -21,10 +21,10 @@
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 0;
-  width: 160px;
+  width: 172px;
 }
 
-.card .ctaButton:hover {
+.carouselCard .ctaButton:hover {
   background: #fff;
   color: #000000;
   cursor: pointer;

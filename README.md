@@ -4,11 +4,16 @@ This is the source code for my new and improved personal website.
 
 ## To Do
 
+### Phase One
+ - Fix all console errors
  - Homepage Images
- - Redesigned AboutMe & CSS
+ - Lint
+
+### Phase Two
+ - Projects API on AWS
  - Refactored Projects page - dynamic contents, and more projects!
  - Better state, using Redux
- - Projects API on AWS
+ - Redesigned AboutMe & CSS
  - Dynamic Project List
  - Readme Writeup
 
