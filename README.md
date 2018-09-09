@@ -1,21 +1,18 @@
 # Introduction
 
-This is the source code for my new and improved personal website.
+This is the source code for my new and improved [personal website](https://www.andrewvoneshen.com).
 
-## To Do
+If you have any issues or comments, please send me a note, or raise an issue here.
 
-### Phase One
- - Fix all console errors
- - Homepage Images
- - Lint
+## Coming Soon
 
-### Phase Two
+Here's a preview of what I have planned next for this site:
+
+### Projects API
  - Projects API on AWS
  - Refactored Projects page - dynamic contents, and more projects!
  - Better state, using Redux
- - Redesigned AboutMe & CSS
  - Dynamic Project List
- - Readme Writeup
 
 ## Acknowledgements
 
