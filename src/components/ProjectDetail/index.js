@@ -6,8 +6,8 @@ const ProjectDetail = ({project}) => {
   // Unpack project
   // const {...} = project;
 
-  // 2 Nested Assets in one??
-  // Time was a bit tight on this, but I'm working on a new version to pull projects similarly to the homepage cards
+  // Time was a bit tight on this, but I'm now working on a new version to pull projects similarly to the homepage cards
+  // Will fix things like the hardcoded button ID, and the enumerated key for button.
   return (
     <div>
       <div className="col-md-2"/>
@@ -32,7 +32,7 @@ const ProjectDetail = ({project}) => {
             </div>
           </SlideSection>
           <SlideSection>
-            <Button cssClass="projButton" text={[<a href="https://github.com/avoneshen/Bridge-Calendar-App">More Details</a>]}/>
+            <Button cssClass="projButton" key={1} text={[<a key={1} href="https://github.com/avoneshen/Bridge-Calendar-App">More Details</a>]}/>
           </SlideSection>
         </div>
         <div className="col-md-2"/>
