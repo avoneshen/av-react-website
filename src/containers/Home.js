@@ -17,7 +17,8 @@ export default class Home extends Component {
       this.setState({ cards });
     } catch (e) {
       // Process error
-      return false;
+      console.log(e);
+      return [];
     }
   }
 

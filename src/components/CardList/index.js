@@ -4,8 +4,6 @@ import { Carousel } from 'react-bootstrap';
 import './styles.css';
 
 // Uses a JSON - so I have the option to replace the source at some point
-//
-//
 const CardList = ({cards, pageHandler}) => {
 
   return (
