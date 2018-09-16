@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
-
 // Utility & Nav dependency
 // also required to push to history
 import { Link, withRouter } from 'react-router-dom';
-
 // Navbar
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-
 // React Router
 import Routes from './Routes';
 import './App.css';
-
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import FA Brand icons
 import { fab } from '@fortawesome/free-brands-svg-icons';
-
 // AWS settings
 import Amplify from 'aws-amplify';
 import awsmobile from './aws-exports';
-Amplify.configure(awsmobile)
+Amplify.configure(awsmobile);
 
+// Add in font awesome brands
 library.add(fab);
 
 class App extends Component {

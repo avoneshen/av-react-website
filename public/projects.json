@@ -1,7 +1,7 @@
 {
   "projects": [{
       "id":"1",
-      "imageSrc":"images/OnTheWeb.png",
+      "imageSrc":"images/CodeIgniterWebsite.png",
       "imageAlt":"My First Website",
       "projectHeader": "andrewvoneshen.com - CodeIgniter",
       "projectBody": [
@@ -29,7 +29,7 @@
     },
     {
       "id":"3",
-      "imageSrc":"images/OnTheWeb.png",
+      "imageSrc":"images/ReactWebsite.png",
       "imageAlt":"My Second Website",
       "projectHeader": "andrewvoneshen.com - React",
       "projectBody": [

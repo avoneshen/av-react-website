@@ -1,4 +1,4 @@
- # Introduction
+# Introduction
 
 This is the source code for my new and improved [personal website](https://www.andrewvoneshen.com).
 
@@ -20,25 +20,34 @@ Here's a preview of what I have planned next for this site:
 ## In Flight
 
 Managing State
- - [x] Redesign Projects
- - [x] Projects Reducer
- - [x] New Project List Component
- - [x] Fix HTML for projects
- - [x] Install axios
- - [] Redux Imports
- - [] Redux wiring in app.js / Projects / Cards
- - [] Card Reducer
- - [] Old Website image
- - [] New Website image
- - [] Push new Site to github
- - [] Update URL on new site
+
+ - []
+ - []
+ - [] Finish the redux jobs
  - [] True Favicon
- - [x] Justify text
+ - [] Push new Site to github
+ - [] Design Image / Product service back-end
+ - [] Off-site image CDN
+ - [] True API
 
 ### Redux
- - [] Add a connect statement to each of the containers to link them upp
- - [] Import connect from Redux in containers
- - [] 
+
+ To Do: Untangle the knot I've written into the projects reducer. It currently returns projects: { projects: [] } - it ought to just be the root array not the second object wrapper.
+
+ Part of that is the handling of the API call the other part is the initial loads.
+
+ - [] Proper Images
+   - [] Old Website image
+   - [] New Website image
+ - [] COMMIT
+ - [] Cards reducer & code
+ - [] Card Reducer
+ - [] COMMIT
+ - [] Projects Reducers Knot
+ - [] Clean logs
+ - [] COMMIT
+ - [] Deploy to test
+ - [] Test Projects, Cards, X-Browsers Compat, Responsive App func
 
 ## Acknowledgements
 

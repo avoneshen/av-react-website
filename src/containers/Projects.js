@@ -1,44 +1,42 @@
 import React, { Component } from "react";
 import { ProjectList } from '../components';
+import {connect} from 'react-redux';
+import { fetchProjects } from '../redux/actions/project_actions';
 
-// At some point, projects will be driven by an API and dynamically pull.
-// Would need to introduce more robust state control then too.
-export default class Projects extends Component {
+class Projects extends Component {
 
-  constructor(props) {
-    super(props);
+  // New, redux component mount
+  // Page is not rerendering after this completes
+  // async componentDidMount() {
+  //   try {
+  //     console.log("Getting projeccs");
+  //     console.log(this.state);
+  //     console.log(this.props);
+  //     await this.props.actions.fetchProjects();
+  //   } catch (e){
+  //     console.log(e);
+  //   }
+  // }
 
-    this.state = {
-      projects: []
-    };
-  }
-
-  async componentWillMount () {
-    try {
-      const projects = await this.getProjects();
-      this.setState({ projects });
-    } catch (e) {
-      // Process error
-      console.log(e);
-      return [];
-    }
-  }
-
-  // Validate if the returned value is valid
-  async getProjects() {
-    try {
-      const projects = await fetch('projects.json');
-      const fetchedProjects = await projects.json()
-      console.log(fetchedProjects);
-      return fetchedProjects.projects.map(project => ({...project}));
-    } catch (e) {
-      console.log(e);
-      return [];
-    }
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(fetchProjects());
   }
 
   render() {
-    const projects = this.state.projects;
+    const { projects } = this.props;
+
+    console.log('---props.projects---');
+    console.log(this.props.projects);
+    console.log('---props.projects---');
+
+    console.log('---Projects Props---');
+    console.log(projects);
+    console.log('---Projects Props---');
+
+
+    //Old pre-redux projcts from state
+    //const projects = this.state.projects;
     return (
       <div className="projects">
         <div className="projectsTitle">
@@ -53,3 +51,10 @@ export default class Projects extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  const { projects } = state;
+  return { projects }
+}
+
+export default connect(mapStateToProps)(Projects);

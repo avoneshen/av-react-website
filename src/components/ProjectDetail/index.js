@@ -22,7 +22,7 @@ const ProjectDetail = ({project}) => {
           </SlideSection>
           <SlideSection>
             <div className="projBody">
-              {project.projectBody.map(body => <p>{body}</p>)}
+              {project.projectBody.map((body, i) => <p key={i}>{body}</p>)}
             </div>
           </SlideSection>
           <SlideSection>

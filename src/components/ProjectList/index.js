@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 // Redux placeholder
 import { ProjectDetail } from '../';
 
-const ProjectList = ({projects}) => {
-  return (
-    <div>
-      {projects.map((project, i) =>
-        <ProjectDetail key={i} project={project} />
-      )}
-    </div>
-  );
+export default class ProjectList extends Component {
+  render () {
+    const { projects } = this.props;
+    console.log('----- ProjList -----');
+    console.log(projects);
+    console.log('----- ProjList -----');
+    return (
+      <div>
+        {projects.projects.map((project, i) =>
+          <ProjectDetail key={i} project={project} />
+        )}
+      </div>
+    );
+  }
 }
-export default ProjectList
