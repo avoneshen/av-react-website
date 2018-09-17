@@ -1,46 +1,28 @@
 import React, { Component } from 'react';
 import { CardList } from '../components';
+import {connect} from 'react-redux';
+import { fetchCards } from '../redux/actions/card_actions';
 
-export default class Home extends Component {
+class Home extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      cards: []
-    };
-  }
-
-  async componentWillMount () {
-    try {
-      const cards = await this.getCards();
-      this.setState({ cards });
-    } catch (e) {
-      // Process error
-      console.log(e);
-      return [];
-    }
-  }
-
-  // Validate if the returned value is valid
-  async getCards() {
-    try {
-      const cards = await fetch('cards.json');
-      const fetchedCards = await cards.json()
-      console.log(fetchedCards);
-      return fetchedCards.cards.map(card => ({...card}));
-    } catch (e) {
-      console.log(e);
-      return [];
-    }
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(fetchCards());
   }
 
   render() {
-    const cardList = this.state.cards;
+    const { cards } = this.props;
     return (
       <div className="Home">
-        <CardList cards={cardList} pageHandler={(path) => this.props.history.push(path)}/>
+        <CardList cards={cards} pageHandler={(path) => this.props.history.push(path)}/>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  const { cards } = state;
+  return cards
+}
+
+export default connect(mapStateToProps)(Home);
