@@ -3,6 +3,7 @@ import { ProjectList } from '../components';
 import {connect} from 'react-redux';
 import { fetchProjects } from '../redux/actions/project_actions';
 
+// Receives and Implements the Project List
 class Projects extends Component {
 
   componentDidMount() {

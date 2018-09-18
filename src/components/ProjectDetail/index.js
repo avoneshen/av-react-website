@@ -2,6 +2,8 @@ import React, { img } from 'react';
 import { Button, Slide, SlideSection} from '../';
 import './styles.css';
 
+// Creates an individual Slide for a Project Detail.
+// Props of project: { imageSrc, imageAlt, projectHeader, projectBody, key, button: {buttonLink, buttonText} }
 const ProjectDetail = ({project}) => {
   return (
     <div className="row projectDetail">
@@ -10,7 +12,7 @@ const ProjectDetail = ({project}) => {
         { /* Image */ }
         <div className="col-md-4">
           <SlideSection>
-              <img src={project.imageSrc} alt={project.imageAlt} />
+            <img src={project.imageSrc} alt={project.imageAlt} />
           </SlideSection>
         </div>
         { /* Details */ }

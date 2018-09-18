@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Page is a hero image, followed by a short bio & links
+// Short summary of contact details - email and social.
 export default () =>
   <div className="contactMe">
     <h3>Contact Me</h3>

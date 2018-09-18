@@ -29,6 +29,7 @@ Managing State
  - [] Design Image / Product service back-end
  - [] Off-site image CDN
  - [] True API
+ - [] Improved About Me page
 
 ### Redux
 
@@ -36,7 +37,7 @@ Managing State
 
  Part of that is the handling of the API call the other part is the initial loads.
 
- - [] clean comments
+ - [] Initial State or Preloaded state isn't right. Investigate.
  - [] COMMIT
  - [] Deploy to test
  - [] Test Projects, Cards, X-Browsers Compat, Responsive App func

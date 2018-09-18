@@ -3,7 +3,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-  projects: { projects: [] }
+  projects: []
 };
 
 export default function(state = INITIAL_STATE, action) {

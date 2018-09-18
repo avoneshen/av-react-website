@@ -3,7 +3,8 @@ import { Card, CarouselCard } from '../';
 import { Carousel } from 'react-bootstrap';
 import './styles.css';
 
-// Uses a JSON - so I have the option to replace the source at some point
+// Takes a list of Cards and creates a carousel for Mobile and a list of Cards for desktop
+// 3 cards to a row.
 const CardList = ({cards, pageHandler}) => {
 
   return (

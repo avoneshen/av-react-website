@@ -3,6 +3,7 @@ import { CardList } from '../components';
 import {connect} from 'react-redux';
 import { fetchCards } from '../redux/actions/card_actions';
 
+// Home Component. Implements a list of Cards.
 class Home extends Component {
 
   componentDidMount() {

@@ -1,6 +1,6 @@
 import { FETCH_CARDS } from './types';
 
-// Projects will become external req but this is likely to stay local.
+// Projects will become external call but this is likely to stay local for reliability.
 const CARDS_URL = 'cards.json';
 
 // The payload dispatched is: payload: { cards: [] }
@@ -13,6 +13,6 @@ export const fetchCards = () => async (dispatch) => {
 
   } catch (e) {
     // Return an error => Fallback will be handled on the page if empty collection
-    console.log(e);
+    dispatch({ type: FETCH_CARDS, payload: { cards: []} });
   }
 };

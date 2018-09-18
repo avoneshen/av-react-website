@@ -2,7 +2,8 @@ import React, { img } from 'react';
 import { Button } from '../';
 import './styles.css';
 
-// Vars: { id, src, alt, ctaPath, ctaText }
+// Creates a single card component. Created by CardList.
+// Card Vars: { id, src, alt, ctaPath, ctaText }
 const Card = ({card, onClick}) =>
   <div key={card.id} className="card col-sm-4">
     <img src={card.src} alt={card.alt} />

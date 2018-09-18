@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from '../components';
 
-// Page is a hero image, followed by a short bio & links
+// Is simple - just a short bio & links.
 export default () =>
   <div className="aboutMe">
     <h3>About Andrew</h3>
