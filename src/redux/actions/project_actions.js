@@ -19,9 +19,6 @@ export const fetchProjects = () => async (dispatch) => {
 
     const projects = await fetch(url);
     const fetchedProjects = await projects.json()
-    console.log('---Reducer---');
-    console.log(fetchedProjects);
-    console.log('---Reducer---');
     dispatch({ type: FETCH_PROJECTS, payload: fetchedProjects });
 
   } catch (e) {

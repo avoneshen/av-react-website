@@ -36,8 +36,6 @@ Managing State
 
  Part of that is the handling of the API call the other part is the initial loads.
 
- - [] Projects Reducers Knot => It may actually be caused by the project_actions returning a JSON.
- - [] Clean logs
  - [] clean comments
  - [] COMMIT
  - [] Deploy to test

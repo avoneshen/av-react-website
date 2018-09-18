@@ -5,19 +5,6 @@ import { fetchProjects } from '../redux/actions/project_actions';
 
 class Projects extends Component {
 
-  // New, redux component mount
-  // Page is not rerendering after this completes
-  // async componentDidMount() {
-  //   try {
-  //     console.log("Getting projeccs");
-  //     console.log(this.state);
-  //     console.log(this.props);
-  //     await this.props.actions.fetchProjects();
-  //   } catch (e){
-  //     console.log(e);
-  //   }
-  // }
-
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(fetchProjects());
@@ -26,17 +13,6 @@ class Projects extends Component {
   render() {
     const { projects } = this.props;
 
-    console.log('---props.projects---');
-    console.log(this.props.projects);
-    console.log('---props.projects---');
-
-    console.log('---Projects Props---');
-    console.log(projects);
-    console.log('---Projects Props---');
-
-
-    //Old pre-redux projcts from state
-    //const projects = this.state.projects;
     return (
       <div className="projects">
         <div className="projectsTitle">
@@ -54,7 +30,7 @@ class Projects extends Component {
 
 function mapStateToProps(state) {
   const { projects } = state;
-  return { projects }
+  return projects;
 }
 
 export default connect(mapStateToProps)(Projects);
