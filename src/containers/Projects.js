@@ -15,7 +15,7 @@ class Projects extends Component {
     const { projects } = this.props;
 
     return (
-      <div className="projects">
+      <div className="projects container">
         <div className="projectsTitle">
           <h3>My Projects</h3>
         </div>

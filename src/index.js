@@ -13,10 +13,6 @@ import thunkMiddleware from 'redux-thunk';
 
 const store = createStore(
   reducer,
-  {
-    projects: { projects: [] },
-    cards: { cards: [] }
-  },
   applyMiddleware(
     thunkMiddleware
   )

@@ -6,17 +6,17 @@ import './styles.css';
 // Props of project: { imageSrc, imageAlt, projectHeader, projectBody, key, button: {buttonLink, buttonText} }
 const ProjectDetail = ({project}) => {
   return (
-    <div className="row projectDetail">
+    <div className="row container projectDetail">
       <div className="col-md-2"/>
       <Slide>
         { /* Image */ }
-        <div className="col-md-4">
+        <div className="col-md-4 container">
           <SlideSection>
             <img src={project.imageSrc} alt={project.imageAlt} />
           </SlideSection>
         </div>
         { /* Details */ }
-        <div className="col-md-6">
+        <div className="col-md-6 container">
           <SlideSection>
             <div className="projHeader">
               {project.projectHeader}
@@ -24,7 +24,7 @@ const ProjectDetail = ({project}) => {
           </SlideSection>
           <SlideSection>
             <div className="projBody">
-              {project.projectBody.map((body, i) => <p key={i}>{body}</p>)}
+              {project.projectBody.map((body, i) => <div key={i}>{body}</div>)}
             </div>
           </SlideSection>
           <SlideSection>
@@ -35,7 +35,7 @@ const ProjectDetail = ({project}) => {
             />
           </SlideSection>
         </div>
-        <div className="col-md-2"/>
+        <div className="col-md-2 container"/>
       </Slide>
       <div className="col-md-2"/>
     </div>
