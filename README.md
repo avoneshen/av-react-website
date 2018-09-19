@@ -8,37 +8,18 @@ If you have any issues or comments, please send me a note, or raise an issue her
 
 Here's a preview of what I have planned next for this site:
 
-### Projects API
- - [] Better state, using Redux
- - [] Projects API on AWS
- - [] Image Hosting for API
- - [] Refactored Projects page - dynamic contents, and more projects!
- - [] Dynamic Project List
- - [] Properly guard HTML to use dangerouslyParseInnerHTML
- - [] remove orphans
-
-## In Flight
+## Coming Soon
 
 Managing State
 
- - []
- - []
- - [] Finish the redux jobs
  - [] True Favicon
  - [] Push new Site to github
  - [] Design Image / Product service back-end
  - [] Off-site image CDN
- - [] True API
+ - [] Projects API
  - [] Improved About Me page
 
 ### Redux
-
- To Do: Untangle the knot I've written into the projects reducer. It currently returns projects: { projects: [] } - it ought to just be the root array not the second object wrapper.
-
- Part of that is the handling of the API call the other part is the initial loads.
-
- - [] Initial State or Preloaded state isn't right. Investigate.
- - [] COMMIT
  - [] Deploy to test
  - [] Test Projects, Cards, X-Browsers Compat, Responsive App func
 
