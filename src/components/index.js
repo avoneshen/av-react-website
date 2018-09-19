@@ -6,6 +6,7 @@ import Slide from './Slide';
 import SlideSection from './SlideSection';
 import Button from './Button';
 import CarouselCard from './CarouselCard';
+import ProjectList from './ProjectList';
 
 export {
   Button,
@@ -14,6 +15,7 @@ export {
   CarouselCard,
   HeroImage,
   ProjectDetail,
+  ProjectList,
   Slide,
   SlideSection
 }

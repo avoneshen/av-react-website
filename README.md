@@ -8,11 +8,20 @@ If you have any issues or comments, please send me a note, or raise an issue her
 
 Here's a preview of what I have planned next for this site:
 
-### Projects API
- - Projects API on AWS
- - Refactored Projects page - dynamic contents, and more projects!
- - Better state, using Redux
- - Dynamic Project List
+## Coming Soon
+
+Managing State
+
+ - [] True Favicon
+ - [] Push new Site to github
+ - [] Design Image / Product service back-end
+ - [] Off-site image CDN
+ - [] Projects API
+ - [] Improved About Me page
+
+### Redux
+ - [] Deploy to test
+ - [] Test Projects, Cards, X-Browsers Compat, Responsive App func
 
 ## Acknowledgements
 

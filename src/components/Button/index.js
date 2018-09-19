@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Vars: { button: { style, text }, onClick }
+// Creates a button, with a custom css class, text and onClick function
 const Button = ({cssClass, onClick, text}) =>
     <div className={cssClass} onClick={() => onClick ? onClick() : null }>
       { text }

@@ -1,41 +1,41 @@
 import React, { img } from 'react';
 import { Button, Slide, SlideSection} from '../';
+import './styles.css';
 
+// Creates an individual Slide for a Project Detail.
+// Props of project: { imageSrc, imageAlt, projectHeader, projectBody, key, button: {buttonLink, buttonText} }
 const ProjectDetail = ({project}) => {
-  // todo: build when dynamic projects API is ready
-  // Unpack project
-  // const {...} = project;
-
-  // Time was a bit tight on this, but I'm now working on a new version to pull projects similarly to the homepage cards
-  // Will fix things like the hardcoded button ID, and the enumerated key for button.
   return (
-    <div>
+    <div className="row container projectDetail">
       <div className="col-md-2"/>
       <Slide>
         { /* Image */ }
-        <div className="col-md-4">
+        <div className="col-md-4 container">
           <SlideSection>
-              <img src={'images/tower-bridge.JPG'} alt={'Tower Bridge'} />
+            <img src={project.imageSrc} alt={project.imageAlt} />
           </SlideSection>
         </div>
         { /* Details */ }
-        <div className="col-md-6">
+        <div className="col-md-6 container">
           <SlideSection>
             <div className="projHeader">
-              Tower Bridge Lifts Calendar
+              {project.projectHeader}
             </div>
           </SlideSection>
           <SlideSection>
             <div className="projBody">
-              <p>Get the opening times for London's Tower Bridge direct to your calendar.</p>
-              <p>This is a Heroku-Hosted Node.js app, with a MongoDB database to store the times.</p>
+              {project.projectBody.map((body, i) => <div key={i}>{body}</div>)}
             </div>
           </SlideSection>
           <SlideSection>
-            <Button cssClass="projButton" key={1} text={[<a key={1} href="https://github.com/avoneshen/Bridge-Calendar-App">More Details</a>]}/>
+            <Button
+              cssClass="projButton"
+              key={project.key}
+              text={[<a key={1} href={project.button.buttonLink}>{project.button.buttonText}</a>]}
+            />
           </SlideSection>
         </div>
-        <div className="col-md-2"/>
+        <div className="col-md-2 container"/>
       </Slide>
       <div className="col-md-2"/>
     </div>

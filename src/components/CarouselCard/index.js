@@ -3,9 +3,9 @@ import { Carousel } from 'react-bootstrap';
 import { Button } from '../';
 import './styles.css';
 
-// Vars: { id, src, alt, ctaPath, ctaText }
-// This function uses a lot of params inherited from parent Carousel
-// I can probably make more terse using spread operators
+// Individual Slide of a React-Bootstrap Carousel.
+// Vars: { id, src, alt, ctaPath, ctaText } - Props same as a Card component.
+// To be made more terse using spread operators
 const CarouselCard = ({active, index, animateOut, animateIn, direction, onAnimateOutEnd, card, onClick}) =>
   <Carousel.Item
     className="carouselCard"

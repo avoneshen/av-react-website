@@ -1,0 +1,45 @@
+{
+  "projects": [{
+      "id":"1",
+      "imageSrc":"images/CodeIgniterWebsite.png",
+      "imageAlt":"My First Website",
+      "projectHeader": "andrewvoneshen.com - CodeIgniter",
+      "projectBody": [
+        "This was a basic website I wrote for a barebones personal site, about a year before this one.",
+        "I used CodeIgniter, a PHP MVC Framework."
+      ],
+      "button": {
+        "buttonText":"More Details",
+        "buttonLink":"https://github.com/avoneshen/avoneshenWebsite"
+      }
+    },
+    {
+      "id":"2",
+      "imageSrc":"images/tower-bridge.JPG",
+      "imageAlt":"Tower Bridge",
+      "projectHeader": "Tower Bridge Lifts Calendar",
+      "projectBody": [
+        "Get the opening times for London's Tower Bridge direct to your calendar.",
+        "This is a Heroku-Hosted Node.js app, with a MongoDB database to store the times."
+      ],
+      "button": {
+        "buttonText":"More Details",
+        "buttonLink":"https://github.com/avoneshen/Bridge-Calendar-App"
+      }
+    },
+    {
+      "id":"3",
+      "imageSrc":"images/ReactWebsite.png",
+      "imageAlt":"My Second Website",
+      "projectHeader": "andrewvoneshen.com - React",
+      "projectBody": [
+        "This is the site you're on right now!",
+        "It's a static site generated using React. I host and manage this site using AWS."
+      ],
+      "button": {
+        "buttonText":"More Details",
+        "buttonLink":""
+      }
+    }
+  ]
+}
