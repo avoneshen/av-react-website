@@ -23,7 +23,7 @@ library.add(fab);
 class App extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="App container-fluid">
         <div className="row">
           <Navbar fluid collapseOnSelect>
             <Navbar.Header>

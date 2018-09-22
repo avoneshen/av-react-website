@@ -70,6 +70,10 @@
   cursor: pointer;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 /* Brand Navbar Styles */
 
 .navbar-default .navbar-brand {
