@@ -10,18 +10,10 @@ Here's a preview of what I have planned next for this site:
 
 ## Coming Soon
 
-Managing State
-
- - [] True Favicon
- - [] Push new Site to github
- - [] Design Image / Product service back-end
- - [] Off-site image CDN
- - [] Projects API
- - [] Improved About Me page
-
-### Redux
- - [] Deploy to test
- - [] Test Projects, Cards, X-Browsers Compat, Responsive App func
+ - Design Image / Product service back-end
+ - Off-site image CDN
+ - Projects API
+ - Improved About Me page
 
 ## Acknowledgements
 
